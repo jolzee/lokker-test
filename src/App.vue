@@ -14,19 +14,19 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld />
+      <TestComponent />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import TestComponent from "./components/TestComponent";
 
 export default {
   name: "App",
 
   components: {
-    HelloWorld,
+    TestComponent,
   },
 
   data: () => ({

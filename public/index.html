@@ -6,7 +6,7 @@
     <meta name="robots" content="noindex,nofollow" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <title>Test Lokker Performance</title>
+    <title>Lokker Test Page</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
@@ -15,15 +15,40 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"
     />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
+      src="https//s.alicdn.com/@p/polyfill.min.js?features=default,es2017,es6,fetch,RegeneratorRuntime"
+      crossorigin
     ></script>
+    <script
+      src="https://s.alicdn.com/@g/icbu-fe-arch/network-speed/0.0.1/discover.js"
+      defer="defer"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NLM2EP7W39"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-NLM2EP7W39");
+    </script>
+    <script
+      data-ad-client="ca-pub-3430663800696003"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://yastatic.net/lodash/4.17.11/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.0.2/echarts.min.js"></script>
+    <script src="https://yastatic.net/swfobject/2.2/swfobject.min.js"></script>
+
 
     <link
       rel="stylesheet"
@@ -73,24 +98,61 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/2.1.4/tesseract.min.js"></script>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/vue-google-maps/0.1.21/vue-google-maps.js"
-      integrity="sha512-YqHkvYBMc6yRrw5xIZ1KteQjoYWP3VO8ug41lXpeNyc/sOnt8cCe2UmOvRiS52YGgGk9FvNBPo5wwyvLXmNqkA=="
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gas/1.11.0/gas.min.js"
       integrity="sha512-FQ+miGNxrytKOLCr17bv+O0DW4kY/V2wgB+T3qufpu7XKhjUVF2K3LmsYIutjOnMeWMfdK+cOz2iKk//EIknbg=="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.7.0/videojs.ads.min.js"
-      integrity="sha512-0Xvit+/SmxT2QzPOjDVZeCZGx7xMFA3/dt/8wFy/VZ+qCPR1HGAaROAW1hbxFo2dtn1xzPNfFb9xQZTe6NaaBQ=="
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+      integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
       crossorigin="anonymous"
-    ></script>
+    />
     <script src="https://cdn.flowplayer.com/releases/native/stable/flowplayer.min.js"></script>
     <script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
     <script src="https://cdn.flowplayer.com/releases/native/stable/plugins/ads.min.js"></script>
+    <script>
+      function initFingerprintJS() {
+        FingerprintJS.load().then((fp) => {
+          // The FingerprintJS agent is ready.
+          // Get a visitor identifier when you'd like to.
+          fp.get().then((result) => {
+            // This is the visitor identifier:
+            const visitorId = result.visitorId;
+            console.warn(
+              "Browser Fingerprint: " + visitorId,
+              "https://github.com/fingerprintjs/fingerprintjs"
+            );
+          });
+        });
+      }
+    </script>
+    <script
+      async
+      src="//cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"
+      onload="initFingerprintJS()"
+    ></script>
+    <script
+      src="https://cdn.lr-ingest.io/LogRocket.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.LogRocket && window.LogRocket.init("tyxaw7/test-page");
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs/0.5.3/fingerprint.js"
+      integrity="sha512-1xNTXD/ZeaKg/Xjb6De9la7CXo5gC1lMk+beyKo691KJrjlj0HbZG6frzK0Wo6bm96i9Cp6w/WB4vSN/8zDBLQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var fingerprint = new Fingerprint().get();
+      console.warn(
+        "Another Fingerprint: " + fingerprint,
+        "https://github.com/svbailey/fingerprintjs"
+      );
+    </script>
+    <script src="https://yastatic.net/swfobject/2.2/swfobject.min.js"></script>
   </body>
 </html>
